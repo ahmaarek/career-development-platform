@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+auth-service/src/main/resources/application.properties
+user-service/src/main/resources/application.properties
