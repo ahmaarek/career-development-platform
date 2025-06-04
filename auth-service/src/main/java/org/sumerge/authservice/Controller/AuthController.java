@@ -1,10 +1,7 @@
 package org.sumerge.authservice.Controller;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.sumerge.authservice.Common.ApiResponse;
 import org.sumerge.authservice.Model.DTO.LoginRequest;
 import org.sumerge.authservice.Model.DTO.LoginResponse;
@@ -15,6 +12,7 @@ import org.sumerge.authservice.Service.AuthService;
 
 @RestController
 @RequestMapping("/auth")
+@CrossOrigin(origins = "*")
 public class AuthController {
 
     private final AuthService authService;
